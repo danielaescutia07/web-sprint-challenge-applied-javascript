@@ -70,6 +70,9 @@ const cardAppender = (selector) => {
         })
       }
     })
+    .catch(err => {
+      console.error(err);
+    })
 }
 
 export { Card, cardAppender }
